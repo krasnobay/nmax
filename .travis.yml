@@ -4,4 +4,9 @@ language: ruby
 cache: bundler
 rvm:
   - 2.5.1
-before_install: gem install bundler -v 2.0.1
+before_install: 
+  - gem install bundler -v 2.0.1
+  - bundle install
+  - gem build nmax.gemspec
+script:
+  - RAILS_ENV=test bundle exec rspec
