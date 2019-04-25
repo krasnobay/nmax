@@ -10,3 +10,4 @@ before_install:
   - gem build nmax.gemspec
 script:
   - RAILS_ENV=test bundle exec rspec
+  - rubocop
