@@ -7,7 +7,10 @@ rvm:
 before_install: 
   - gem install bundler -v 2.0.1
   - bundle install
-  - gem build nmax.gemspec
-script:
-  - RAILS_ENV=test bundle exec rspec
+  
+before_script
   - rubocop
+  - RAILS_ENV=test bundle exec rspec
+
+script:
+  - gem build nmax.gemspec
