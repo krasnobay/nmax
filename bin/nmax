@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'nmax'
+
+Nmax
+  .call(ARGF, ARGV.shift.to_i)
+  .each { |number| puts number }

@@ -1,0 +1,20 @@
+[
+	{
+		"file": "numbers_0",
+		"answer": [],
+		"request_count": 5,
+		"answer_count": 0
+	},
+	{
+		"file": "numbers_1",
+		"answer": [5],
+		"request_count": 5,
+		"answer_count": 1
+	},
+	{
+		"file": "numbers_1000",
+		"answer": [1000,998,999],
+		"request_count": 3,
+		"answer_count": 3
+	}
+]
